@@ -8,7 +8,7 @@
         .field
           = f.text_area :message, rows: 4, style: 'width: 100%;'
         .field
-          = f.text_field :attachment, style: 'width: 60%;'
+          = f.file_field :attachment, style: 'width: 60%;'
 
           = f.hidden_field :project_id, value: @project.id
           = f.hidden_field :phase_id, value: @post.phase.id
